@@ -1,15 +1,15 @@
 :root {
-  --navy: #10283e;
-  --navy-deep: #091a2a;
-  --blue: #176f91;
-  --gold: #d4aa4d;
-  --gold-soft: #f2e3bd;
-  --ink: #182432;
-  --muted: #5b6978;
-  --paper: #f5f7f8;
+  --navy: #171717;
+  --navy-deep: #070707;
+  --blue: #9b7624;
+  --gold: #d8b44f;
+  --gold-soft: #f4e6b8;
+  --ink: #171717;
+  --muted: #625e55;
+  --paper: #f7f4ec;
   --white: #ffffff;
-  --line: #d9e0e5;
-  --shadow: 0 22px 55px rgba(9, 26, 42, .12);
+  --line: #ded8c9;
+  --shadow: 0 22px 55px rgba(0, 0, 0, .14);
   --radius: 18px;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
@@ -25,26 +25,27 @@ img { display: block; max-width: 100%; }
 .skip-link:focus { left: 1rem; top: 1rem; }
 .shell { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
 .topline { height: 5px; background: linear-gradient(90deg, var(--gold), #f0d589 48%, var(--gold)); }
-.site-header { position: sticky; top: 0; z-index: 30; background: rgba(9, 26, 42, .94); backdrop-filter: blur(14px); color: var(--white); border-bottom: 1px solid rgba(255,255,255,.1); }
+.site-header { position: sticky; top: 0; z-index: 30; background: rgba(5, 5, 5, .96); backdrop-filter: blur(14px); color: var(--white); border-bottom: 1px solid rgba(216,180,79,.22); }
 .nav-wrap { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .brand { display: inline-flex; align-items: center; gap: .8rem; font-weight: 800; letter-spacing: .03em; }
-.brand-mark { display: grid; place-items: center; width: 42px; height: 42px; color: var(--navy-deep); background: var(--gold); border-radius: 10px 2px 10px 2px; font-weight: 900; }
-.brand-copy span { display: block; font-size: .72rem; color: #b9c7d2; letter-spacing: .15em; text-transform: uppercase; font-weight: 600; }
+.brand-mark { display: block; flex:0 0 auto; width: 52px; height: 52px; overflow:hidden; color:transparent; background: #070707 url('/assets/ct-electrical-sales-logo.png') center/cover no-repeat; border:1px solid rgba(216,180,79,.4); border-radius:8px; text-indent:-9999px; }
+.brand-copy { color:#f8edc8; }
+.brand-copy span { display: block; font-size: .72rem; color: #c8b879; letter-spacing: .15em; text-transform: uppercase; font-weight: 600; }
 .nav-links { display: flex; align-items: center; gap: 1.05rem; font-size: .94rem; font-weight: 650; }
-.nav-links a { color: #dce5eb; }
+.nav-links a { color: #eee8d8; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--gold); }
 .nav-cta { padding: .65rem 1rem; border: 1px solid var(--gold); border-radius: 999px; }
 .menu-button { display: none; border: 1px solid rgba(255,255,255,.35); background: transparent; color: white; border-radius: 8px; padding: .55rem .75rem; font: inherit; }
 .hero { position: relative; min-height: 690px; display: grid; align-items: center; overflow: hidden; color: white; background: var(--navy-deep); }
-.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(6,18,29,.95) 0%, rgba(8,25,40,.79) 41%, rgba(8,25,40,.18) 68%), url('/assets/electrical-infrastructure-hero.png') center/cover no-repeat; }
-.hero::after { content: ""; position: absolute; inset: auto 0 0; height: 130px; background: linear-gradient(transparent, rgba(9,26,42,.88)); }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,4,4,.97) 0%, rgba(7,7,7,.84) 41%, rgba(7,7,7,.25) 72%), url('/assets/electrical-infrastructure-hero.png') center/cover no-repeat; filter:saturate(.72); }
+.hero::after { content: ""; position: absolute; inset: auto 0 0; height: 130px; background: linear-gradient(transparent, rgba(5,5,5,.9)); }
 .hero-content { position: relative; z-index: 2; max-width: 710px; padding: 7rem 0 8rem; }
 .eyebrow { display: inline-flex; gap: .55rem; align-items: center; margin-bottom: 1.2rem; color: #f4d98f; text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 800; }
 .eyebrow::before { content: ""; width: 30px; height: 2px; background: var(--gold); }
 h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
 .hero h1 { color: white; font-size: clamp(3rem, 7vw, 6.4rem); letter-spacing: -.055em; max-width: 760px; }
 .hero h1 strong { color: var(--gold); font-weight: inherit; }
-.hero p { max-width: 620px; margin: 1.6rem 0 2rem; font-size: clamp(1.08rem, 2vw, 1.3rem); color: #d6e0e7; }
+.hero p { max-width: 620px; margin: 1.6rem 0 2rem; font-size: clamp(1.08rem, 2vw, 1.3rem); color: #e1ded4; }
 .actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: .75rem 1.2rem; border-radius: 8px; font-weight: 800; border: 1px solid transparent; transition: transform .18s ease, background .18s ease; }
 .button:hover { transform: translateY(-2px); }
@@ -73,12 +74,12 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
 .arrow-link:hover::after { transform: translateX(4px); }
 .manufacturer-band { background: var(--navy); color: white; }
 .manufacturer-band h2, .manufacturer-band h3 { color: white; }
-.manufacturer-band .section-head p { color: #c8d4dc; }
+.manufacturer-band .section-head p { color: #d4cfbf; }
 .maker-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.15); }
 .maker { min-height: 150px; padding: 1.35rem; background: var(--navy); display: flex; flex-direction: column; justify-content: space-between; }
-.maker:hover { background: #173750; }
+.maker:hover { background: #242014; }
 .maker strong { font-size: 1.14rem; }
-.maker span { color: #b9c9d4; font-size: .9rem; }
+.maker span { color: #d0cab9; font-size: .9rem; }
 .maker em { color: var(--gold); font-style: normal; font-size: .8rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 .territory { display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; align-items: center; }
 .territory-map { position: relative; min-height: 480px; border-radius: 22px; background: var(--navy-deep); overflow: hidden; box-shadow: var(--shadow); }
@@ -92,9 +93,9 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
 .cta-panel h2 { color: var(--navy-deep); font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -.04em; }
 .cta-panel p { max-width: 690px; margin-bottom: 0; }
 .cta-panel .button { background: var(--navy-deep); color: white; }
-.page-hero { padding: 7rem 0 4.5rem; background: linear-gradient(135deg, var(--navy-deep), var(--navy)); color: white; }
+.page-hero { padding: 7rem 0 4.5rem; background: radial-gradient(circle at 86% 14%, #352b10 0, transparent 26%), linear-gradient(135deg, var(--navy-deep), var(--navy)); color: white; }
 .page-hero h1 { color: white; font-size: clamp(2.8rem, 6vw, 5rem); letter-spacing: -.05em; max-width: 900px; }
-.page-hero p { max-width: 720px; color: #ced9e0; font-size: 1.18rem; }
+.page-hero p { max-width: 720px; color: #ddd8c9; font-size: 1.18rem; }
 .filter-wrap { position: sticky; top: 76px; z-index: 20; padding: 1rem 0; background: rgba(245,247,248,.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .filter-row { display: flex; gap: .6rem; flex-wrap: wrap; }
 .filter { border: 1px solid #bac6ce; background: white; border-radius: 999px; padding: .62rem 1rem; font: inherit; color: var(--ink); cursor: pointer; }
@@ -104,7 +105,7 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
 .directory-card h2 { font-size: 1.35rem; margin: .8rem 0; }
 .directory-card p { color: var(--muted); margin-top: 0; }
 .directory-card .arrow-link { margin-top: auto; }
-.tag { display: inline-flex; align-self: flex-start; padding: .3rem .58rem; border-radius: 5px; background: #e8f0f4; color: var(--blue); text-transform: uppercase; letter-spacing: .07em; font-size: .7rem; font-weight: 850; }
+.tag { display: inline-flex; align-self: flex-start; padding: .3rem .58rem; border-radius: 5px; background: #f2e8c9; color: #765614; text-transform: uppercase; letter-spacing: .07em; font-size: .7rem; font-weight: 850; }
 .solutions-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
 .solution { padding: 2rem; border-radius: var(--radius); background: var(--paper); border: 1px solid var(--line); }
 .solution h2 { font-size: 1.8rem; margin-bottom: .9rem; }
@@ -181,7 +182,7 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
 .feature { padding: 1.5rem; background: white; border: 1px solid var(--line); border-radius: 12px; }
 .feature strong { display: block; margin-bottom: .5rem; color: var(--navy); font-size: 1.08rem; }
 .feature p { margin: 0; color: var(--muted); }
-.site-footer { padding: 4rem 0 2rem; background: var(--navy-deep); color: #bac9d3; }
+.site-footer { padding: 4rem 0 2rem; background: var(--navy-deep); color: #cfc8b8; border-top:1px solid rgba(216,180,79,.3); }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 3rem; }
 .site-footer .brand { color: white; }
 .site-footer h2 { color: white; font-size: 1rem; margin-bottom: 1rem; }
@@ -208,7 +209,7 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
   .brand-copy { font-size: .86rem; }
   .brand-copy span { font-size: .62rem; }
   .hero { min-height: 680px; }
-  .hero::before { background: linear-gradient(90deg, rgba(6,18,29,.96), rgba(8,25,40,.6)), url('/assets/electrical-infrastructure-hero.png') 62% center/cover no-repeat; }
+  .hero::before { background: linear-gradient(90deg, rgba(4,4,4,.97), rgba(7,7,7,.68)), url('/assets/electrical-infrastructure-hero.png') 62% center/cover no-repeat; }
   .hero h1 { font-size: 3.1rem; }
   .proof-strip { margin-top: -45px; }
   .proof-grid, .capability-grid, .directory-grid, .solutions-grid, .team-grid, .footer-grid, .market-grid, .feature-list, .compare-grid, .measured-grid { grid-template-columns: 1fr; }
