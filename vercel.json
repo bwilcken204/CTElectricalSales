@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/our-team",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/products",
+      "destination": "/manufacturers/",
+      "permanent": true
+    },
+    {
+      "source": "/cloud-hosted-epms",
+      "destination": "/meter-sight/",
+      "permanent": true
+    }
+  ]
+}
