@@ -104,6 +104,8 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
 .directory-card { min-height: 250px; display: flex; flex-direction: column; padding: 1.5rem; border: 1px solid var(--line); border-top: 4px solid var(--gold); border-radius: 12px; background: white; }
 .maker-logo { display:flex; align-items:center; justify-content:center; width:100%; height:106px; margin:1rem 0 .2rem; padding:.85rem 1rem; border:1px solid #e7dfce; border-radius:10px; background:#fff; }
 .maker-logo img { width:auto; max-width:100%; height:auto; max-height:78px; object-fit:contain; }
+.maker-logo img[alt="RMS Energy logo"] { max-width:92%; max-height:64px; }
+.maker-logo img[alt="NOARK logo"] { max-width:82%; max-height:58px; }
 .directory-card h2 { font-size: 1.35rem; margin: .8rem 0; }
 .directory-card p { color: var(--muted); margin-top: 0; }
 .directory-card .arrow-link { margin-top: auto; }
