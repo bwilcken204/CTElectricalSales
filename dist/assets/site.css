@@ -259,4 +259,17 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
   .console-grid { grid-template-columns: 1fr; }
   .footer-bottom { display: block; }
 }
+.metersight-resources { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.metersight-video { margin: 0; overflow: hidden; border-radius: var(--radius); background: var(--navy-deep); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.metersight-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #071725; }
+.metersight-video figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; padding: 1rem 1.25rem; color: var(--gold-soft); font-weight: 650; }
+.metersight-video figcaption span { color: #cfc8b8; font-size: .85rem; font-weight: 400; }
+.metersight-brochure { padding: 1.75rem; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--gold); border-radius: var(--radius); }
+.metersight-brochure h3 { font-size: 1.6rem; line-height: 1.25; margin: .75rem 0; }
+.metersight-brochure p { color: var(--muted); }
+.metersight-file-details { font-size: .85rem; }
+.metersight-brochure .button { display: flex; flex-wrap: wrap; gap: .35rem; text-align: center; }
+.metersight-link-note { font-size: .7rem; font-weight: 400; }
+.metersight-brochure .arrow-link { display: inline-block; margin-top: 1rem; }
+@media (max-width: 900px) { .metersight-resources { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
