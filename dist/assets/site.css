@@ -259,6 +259,12 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
   .console-grid { grid-template-columns: 1fr; }
   .footer-bottom { display: block; }
 }
+.footer-social { margin-top: 2rem; }
+.footer-social a { display: inline-flex; align-items: center; gap: .65rem; color: var(--gold-soft); }
+.footer-social svg { flex-shrink: 0; color: var(--gold); }
+.footer-social a:hover span, .metersight-youtube a:hover { text-decoration: underline; }
+.footer-social a:focus-visible, .metersight-youtube a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
+.metersight-youtube { margin: 0; padding: 0 1.25rem 1.25rem; color: var(--gold-soft); font-size: .9rem; }
 .metersight-resources { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
 .metersight-video { margin: 0; overflow: hidden; border-radius: var(--radius); background: var(--navy-deep); border: 1px solid var(--line); box-shadow: var(--shadow); }
 .metersight-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #071725; }
