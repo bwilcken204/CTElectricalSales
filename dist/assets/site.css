@@ -16,6 +16,10 @@
   background: var(--white);
   font-synthesis: none;
 }
+.metering-note { margin-top: 1.5rem; color: var(--muted); font-size: .92rem; }
+.metering-note a { text-decoration: underline; }
+#main [id] { scroll-margin-top: 100px; }
+.feature h3 { margin-bottom: .75rem; font-size: 1.25rem; }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
