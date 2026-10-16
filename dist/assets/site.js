@@ -6,7 +6,7 @@ if (nav) {
     { href: '/markets/', label: 'Markets' },
     { href: '/meter-sight/', label: 'Meter Sight' },
     { href: '/sell-equipment/', label: 'Sell Equipment' },
-    { href: '/about/', label: 'About' }
+    { href: '/about-us/', label: 'About Us' }
   ];
   links.forEach(({ href, label }) => {
     let link = nav.querySelector(`a[href="${href}"]`);
@@ -38,10 +38,10 @@ filters.forEach((filter) => filter.addEventListener('click', () => {
 document.querySelectorAll('[data-year]').forEach((node) => node.textContent = new Date().getFullYear());
 
 document.querySelectorAll('.site-footer nav').forEach((footerNav) => {
-  if (footerNav.querySelector('a[href="/manufacturers/"]') && !footerNav.querySelector('a[href="/about/"]')) {
+  if (footerNav.querySelector('a[href="/manufacturers/"]') && !footerNav.querySelector('a[href="/about-us/"]')) {
     if (!footerNav.querySelector('a[href="/sell-equipment/"]')) {
       footerNav.append(Object.assign(document.createElement('a'), { href: '/sell-equipment/', textContent: 'Sell electrical equipment' }));
     }
-    footerNav.append(Object.assign(document.createElement('a'), { href: '/about/', textContent: 'About our team' }));
+    footerNav.append(Object.assign(document.createElement('a'), { href: '/about-us/', textContent: 'About Us' }));
   }
 });

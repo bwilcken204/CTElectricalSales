@@ -5,8 +5,13 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/about/",
+      "destination": "/about-us/",
+      "permanent": true
+    },
+    {
       "source": "/our-team/",
-      "destination": "/about/",
+      "destination": "/about-us/",
       "permanent": true
     },
     {
