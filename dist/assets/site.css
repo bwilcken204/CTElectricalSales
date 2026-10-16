@@ -30,6 +30,17 @@
 .socomec-page .solution { background:white; }
 .socomec-page .faq-list a { text-decoration:underline; }
 .socomec-faq { margin-top:3rem; }
+.socomec-product-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; }
+.socomec-product-card { border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:white; display:flex; flex-direction:column; }
+.socomec-product-image { height:240px; padding:1.5rem; background:white; display:flex; justify-content:center; align-items:center; border-bottom:1px solid var(--line); }
+.socomec-product-image img { width:100%; height:100%; object-fit:contain; }
+.socomec-product-pair img { width:50%; }
+.socomec-product-copy { padding:1.5rem; display:flex; flex-direction:column; flex:1; }
+.socomec-product-copy h3 { margin:0; font-size:1.3rem; }
+.socomec-product-caption { color:var(--muted); font-size:.8rem; margin-bottom:1rem; }
+.socomec-product-copy .arrow-link { margin-top:auto; }
+.socomec-product-grid ~ .compare-grid { margin-top:2rem; }
+@media(max-width:600px) { .socomec-product-grid { grid-template-columns:1fr; } .socomec-product-image { height:210px; } }
 @media(max-width:900px) { .socomec-hero-grid { grid-template-columns:1fr; } }
 .metering-note { margin-top: 1.5rem; color: var(--muted); font-size: .92rem; }
 .metering-note a { text-decoration: underline; }
