@@ -16,6 +16,21 @@
   background: var(--white);
   font-synthesis: none;
 }
+.socomec-breadcrumb { display:flex; flex-wrap:wrap; gap:.65rem; margin-bottom:2.5rem; font-size:.85rem; color:var(--gold-soft); }
+.socomec-breadcrumb a:hover { text-decoration:underline; }
+.socomec-hero-grid { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); gap:3rem; align-items:center; }
+.socomec-page .page-hero h1 { font-size:clamp(2.6rem,5vw,4.5rem); }
+.socomec-brand-panel { border:1px solid rgba(216,180,79,.4); border-radius:18px; padding:1.6rem; background:#171717; }
+.socomec-logo { padding:1.4rem; border-radius:10px; background:white; }
+.socomec-logo img { width:100%; height:100px; object-fit:contain; }
+.socomec-brand-panel p { font-size:.95rem; }
+.socomec-brand-panel .socomec-panel-label { color:var(--gold-soft); font-weight:700; }
+.socomec-states { display:grid; grid-template-columns:1fr 1fr; gap:.65rem; list-style:none; padding:0; }
+.socomec-states li { border:1px solid #65552b; border-radius:8px; padding:.6rem; color:#f4e6b8; text-align:center; }
+.socomec-page .solution { background:white; }
+.socomec-page .faq-list a { text-decoration:underline; }
+.socomec-faq { margin-top:3rem; }
+@media(max-width:900px) { .socomec-hero-grid { grid-template-columns:1fr; } }
 .metering-note { margin-top: 1.5rem; color: var(--muted); font-size: .92rem; }
 .metering-note a { text-decoration: underline; }
 #main [id] { scroll-margin-top: 100px; }
