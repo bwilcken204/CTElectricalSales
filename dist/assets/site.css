@@ -33,6 +33,9 @@
 .solutions-page .solution-visual { margin:0 0 1.5rem; }
 .solutions-page .solution-image-frame { height:230px; background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden; padding:16px; }
 .solutions-page .solution-image-frame img { width:100%; height:100%; object-fit:contain; }
+.solutions-page .solution-product-trio { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); align-items:center; gap:14px; }
+.solutions-page .solution-product-trio img { min-width:0; max-height:190px; }
+@media(max-width:600px) { .solutions-page .solution-product-trio { gap:9px; padding:12px; } .solutions-page .solution-product-trio img { max-height:160px; } }
 .solutions-page .solution-photo .solution-image-frame { padding:0; }
 .solutions-page .solution-photo img { object-fit:cover; }
 .solutions-page .solution-visual figcaption { margin-top:.55rem; color:var(--muted); font-size:.78rem; }
