@@ -35,6 +35,9 @@
 .solutions-page .solution-image-frame img { width:100%; height:100%; object-fit:contain; }
 .solutions-page .solution-product-trio { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); align-items:center; gap:14px; }
 .solutions-page .solution-product-trio img { min-width:0; max-height:190px; }
+.solutions-page .solution-distribution-gallery { display:grid; grid-template-columns:1.5fr 1fr .65fr; align-items:center; gap:12px; padding:12px; }
+.solutions-page .solution-distribution-gallery img { min-width:0; }
+.solutions-page .solution-distribution-gallery .distribution-switchboard { object-fit:cover; border-radius:6px; }
 @media(max-width:600px) { .solutions-page .solution-product-trio { gap:9px; padding:12px; } .solutions-page .solution-product-trio img { max-height:160px; } }
 .solutions-page .solution-photo .solution-image-frame { padding:0; }
 .solutions-page .solution-photo img { object-fit:cover; }
