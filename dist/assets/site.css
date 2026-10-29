@@ -28,6 +28,8 @@
 .socomec-states { display:grid; grid-template-columns:1fr 1fr; gap:.65rem; list-style:none; padding:0; }
 .socomec-states li { border:1px solid #65552b; border-radius:8px; padding:.6rem; color:#f4e6b8; text-align:center; }
 .socomec-page .solution { background:white; }
+.noark-product-image { height:190px; min-width:140px; }
+.noark-product-image img { width:100%; height:100%; object-fit:contain; }
 .socomec-page .faq-list a { text-decoration:underline; }
 .socomec-faq { margin-top:3rem; }
 .solutions-page .solution-visual { margin:0 0 1.5rem; }
