@@ -5,6 +5,12 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ctelectricreps.com" }],
+      "destination": "https://ctelectricreps.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/about/",
       "destination": "/about-us/",
       "permanent": true
