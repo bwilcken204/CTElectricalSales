@@ -119,7 +119,10 @@ h1, h2, h3 { line-height: 1.08; margin: 0; color: var(--ink); }
 .capability-card { position: relative; min-height: 280px; padding: 1.7rem; background: white; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
 .capability-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(16,40,62,.1); border-color: #b8c7d1; }
 .capability-number { font-size: .82rem; font-weight: 900; letter-spacing: .1em; color: var(--gold); }
-.capability-card h3 { margin-top: 3rem; font-size: 1.45rem; }
+.capability-image { height: 190px; margin-top: 1rem; overflow: hidden; border-radius: 8px; background: #fff; }
+.capability-image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.capability-image-photo img { object-fit: cover; }
+.capability-card h3 { margin-top: 1.5rem; font-size: 1.45rem; }
 .capability-card p { color: var(--muted); }
 .arrow-link { display: inline-flex; gap: .5rem; align-items: center; color: var(--blue); font-weight: 800; }
 .arrow-link::after { content: "→"; transition: transform .18s ease; }
