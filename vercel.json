@@ -5,6 +5,11 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/power-quality-analysis/",
+      "destination": "/solutions/#power-quality",
+      "permanent": true
+    },
+    {
       "source": "/sell-equipment/",
       "destination": "/contact/",
       "permanent": true
